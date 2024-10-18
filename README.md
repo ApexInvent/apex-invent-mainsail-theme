@@ -12,6 +12,7 @@ git clone https://github.com/ApexInvent/apex-invent-mainsail-theme.git ~/printer
 [MIT License](./LICENSE)
 
 ## Credits
-Thanks to our Apex Invent community for their continued support!
+
+* Our Apex Invent community for their continued support!
 
 * [eliteSchwein](https://github.com/eliteSchwein/acryl-fluidd-mainsail-theme) for the base this is built off of
