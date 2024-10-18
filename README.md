@@ -10,8 +10,9 @@ git clone https://github.com/ApexInvent/apex-invent-mainsail-theme.git ~/printer
 
 ## Add the theme to your moonraker update manager
 ```bash
-cd ~/printer_data/config/.theme 
-./updater.sh
+cd ~/printer_data/config/.theme
+sudo chmod +x updater.sh
+sudo ./updater.sh
 ```
 
 ## License
