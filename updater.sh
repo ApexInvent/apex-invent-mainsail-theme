@@ -3,7 +3,10 @@
 # Define theme directory and repository
 THEME_DIR="~/printer_data/config/.theme"
 REPO_URL="https://github.com/ApexInvent/apex-invent-mainsail-theme.git"
-MOONRAKER_CONFIG="~/printer_data/config/moonraker.conf"
+MOONRAKER_CONFIG="$HOME/printer_data/config/moonraker.conf"
+
+
+
 
 # Add update manager entry to moonraker.conf
 echo "Adding update manager configuration to moonraker.conf..."
