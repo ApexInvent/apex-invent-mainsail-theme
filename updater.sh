@@ -1,12 +1,18 @@
 #!/bin/bash
 
 # Define theme directory and repository
-THEME_DIR="~/printer_data/config/.theme"
+THEME_DIR="$HOME/printer_data/config/.theme"
 REPO_URL="https://github.com/ApexInvent/apex-invent-mainsail-theme.git"
-MOONRAKER_CONFIG="$HOME/printer_data/config/moonraker.conf"
+MOONRAKER_CONFIG="/home/$(whoami)/printer_data/config/moonraker.conf"
 
-
-
+# Clone the theme into the theme directory
+echo "Cloning the Apex Invent Mainsail Theme into $THEME_DIR..."
+if git clone "$REPO_URL" "$THEME_DIR"; then
+    echo "Successfully cloned the repository."
+else
+    echo "Failed to clone the repository." >&2
+    exit 1
+fi
 
 # Add update manager entry to moonraker.conf
 echo "Adding update manager configuration to moonraker.conf..."
@@ -27,4 +33,4 @@ else
     exit 1
 fi
 
-echo "Configuration complete."
+echo "Installation complete."
