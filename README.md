@@ -5,13 +5,13 @@ A sleek, visually striking theme for Mainsail created by Apex Invent.
 Clone the repository to your .theme directory:
 ```bash
 git clone https://github.com/ApexInvent/apex-invent-mainsail-theme.git ~/printer_data/config/.theme
-```bash
+```
 
 ## Add the theme to your moonraker update manager
 ```bash
 cd ~/printer_data/config/.theme
 ./updater.sh
-```bash
+```
 
 ## License
 [MIT License](./LICENSE)
