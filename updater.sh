@@ -1,13 +1,12 @@
 #!/bin/bash
 
-# Define theme directory and repository
-THEME_DIR="$HOME/printer_data/config/.theme"
+# Define repository
 REPO_URL="https://github.com/ApexInvent/apex-invent-mainsail-theme.git"
-MOONRAKER_CONFIG="$HOME/printer_data/config/moonraker.conf"
+MOONRAKER_CONFIG="~/printer_data/config/moonraker.conf"
 
 # Add update manager entry to moonraker.conf
 echo "Adding update manager configuration to moonraker.conf..."
-CONFIG_ENTRY="\n[update_manager apex_invent_theme]\ntype: git_repo\npath: $THEME_DIR\norigin: $REPO_URL"
+CONFIG_ENTRY="\n[update_manager apex_invent_theme]\ntype: git_repo\npath: ~/printer_data/config/.theme\norigin: $REPO_URL"
 if echo -e "$CONFIG_ENTRY" | sudo tee -a "$MOONRAKER_CONFIG" > /dev/null; then
     echo "Successfully added update manager entry to moonraker.conf."
 else
