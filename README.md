@@ -18,4 +18,4 @@ git clone https://github.com/ApexInvent/apex-invent-mainsail-theme.git ~/printer
 * [eliteSchwein](https://github.com/eliteSchwein/acryl-fluidd-mainsail-theme) for the base this is built off of
 
 ## PREVIEW
-![Apex Invent Mainsail Theme](relative/path/to/screenshot.png)
+![Apex Invent Mainsail Theme](./screenshot.png)
